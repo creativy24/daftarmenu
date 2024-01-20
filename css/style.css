@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+	letter-spacing: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+
+.kategori {
+    text-align: center;
+    margin: 10px;
+	font-size: 24px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.kategori button {
+    font-family: 'YourChosenFont', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+	margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.kategori button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.kategori button:active {
+    background-color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    perspective: 1000px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    width: calc(30% - 10px);
+    margin: 2px;
+	padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    max-height: 100px;
+}
+
+.menu-item h3,
+.menu-item p {
+    margin: 0;
+}
+
+.menu-item h3 {
+    font-size: 14px;
+    font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #888;
+}
+#current-time {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #333;
+	font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+@media (max-width: 1200px) {
+    .menu-item {
+        width: calc(33.33% - 10px);
+    }
+	h1 {
+        font-size: 32px;
+    }
+
+    .kategori {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-item {
+        width: calc(50% - 10px);
+    }
+	h1 {
+        font-size: 28px;
+    }
+
+    .kategori {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: calc(100% - 10px);
+    }
+	h1 {
+        font-size: 24px;
+    }
+
+    .kategori {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-item {
+        width: calc(100% - 10px);
+    }
+	h1 {
+        font-size: 22px;
+    }
+
+    .kategori {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .menu-item {
+        width: calc(100% - 10px);
+    }
+	h1 {
+        font-size: 18px;
+    }
+
+    .kategori {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 100px) {
+    .menu-item {
+        width: calc(100% - 10px);
+    }
+	h1 {
+        font-size: 16px;
+    }
+
+    .kategori {
+        font-size: 10px;
+    }
+}
